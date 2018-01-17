@@ -1,0 +1,33 @@
+
+public class HelloWorld {
+
+	public static void main(String[] args) {
+		// TODO 自動生成されたメソッド・スタブ
+
+	
+		int a =10;
+		String b = a>=10 ? "マイナス":"プラス";
+		System.out.println(b);
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+
+ }
+
