@@ -1,0 +1,35 @@
+package jp.uehara;
+import java.util.HashMap;
+import java.util.Map;
+
+
+
+
+
+public class uehara {
+
+class Hero{
+	public String name;
+
+}
+
+
+	public static void main(String[] args) {
+
+// TODO 自動生成されたメソッド・スタブ
+
+
+
+Map <String,Integer>name=new HashMap<String,Integer>();
+name.put("ffff", 1);
+name.put("aaa",2);
+name.put("aad",2);
+for(String a:name.keySet()){
+	int b=name.get(a);
+	System.out.println(a+b);
+
+}
+
+	}
+
+}

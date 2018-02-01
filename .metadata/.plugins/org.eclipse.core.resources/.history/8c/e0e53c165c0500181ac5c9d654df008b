@@ -1,0 +1,34 @@
+package jp.uehara;
+import java.util.HashSet;
+import java.util.Set;
+
+
+
+public class uehara {
+
+class Hero{
+	public String name;
+
+}
+
+
+	public static void main(String[] args) {
+
+// TODO 自動生成されたメソッド・スタブ
+
+
+
+
+Set <String>name=new HashSet <String>();
+name.add("gggggg");
+name.add("kkkk");
+name.add("hhhh");
+
+
+
+
+
+
+	}
+
+}

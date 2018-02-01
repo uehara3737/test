@@ -1,0 +1,33 @@
+package jp.test;
+
+public class Wizard {
+
+
+ String name;
+  int hp;
+
+
+  public String getName(){
+	  return this.name;
+
+  }
+
+  public void setName(String name){
+	  this.name=name;
+
+  }
+
+
+
+  public void heal(Helo h){
+	  h.hp+=15;
+	  System.out.println(this.name+"が"+h+"を回復させた");
+	  System.out.println(h.name+"のHPが１５UPした");
+  }
+
+
+
+
+}
+
+

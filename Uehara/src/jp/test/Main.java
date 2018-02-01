@@ -1,0 +1,93 @@
+package jp.test;
+
+public class Main {
+
+	public static void main(String[] args) {
+
+		// TODO 自動生成
+
+//剣１
+		Sword s=new Sword();
+		s.name="炎の剣";
+		s.damage=50;
+
+
+
+
+//勇者ｈ
+		Helo h=new Helo("上原");
+
+          h.ken=s;
+
+
+
+//勇者ｈ１
+
+          Helo h2=new Helo();
+          h2.hp=200;
+
+
+
+
+//きのこｋ
+
+          Kinoko k=new Kinoko();
+          k.hp=50;
+          k.gobi='A';
+
+
+          Kinoko k1=new Kinoko();
+          k1.hp=25;
+          k1.gobi='B';
+
+
+//スーパーヒーロー
+
+          	SuperHero sh=new SuperHero();
+
+
+
+
+
+//Wizard
+
+          Wizard w=new Wizard();
+          w.name="めぐみん";
+
+//ダンサー（親クラスはキャラクター）
+          Dancer d=new Dancer();
+          d.name="aaa";
+
+          d.attack(k1);
+
+
+
+//冒険
+
+          Helo.start();
+
+          h.attack(k1);
+System.out.println(s.name);
+
+          h.attack(k);
+
+
+          w.heal(h);
+          System.out.println(h.name+"の最終HPは"+h.hp);
+
+          System.out.println(h2.name);
+
+
+//配列
+
+          Character[] c=new Character[5];
+          c[0]=new Helo();
+          c[1]=new Wizard();
+
+
+
+
+}
+
+
+}

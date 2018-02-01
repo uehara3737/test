@@ -1,0 +1,10 @@
+package jp.test;
+
+public class Wizard {
+
+
+	private String name;
+  int hp;
+
+
+}

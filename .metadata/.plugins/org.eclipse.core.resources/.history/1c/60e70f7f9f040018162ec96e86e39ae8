@@ -1,0 +1,37 @@
+package jp.uehara;
+import java.util.HashMap;
+import java.util.*;
+
+public class uehara {
+
+class Hero{
+	public String name;
+	
+}
+	
+	
+	public static void main(String[] args) {
+
+// TODO 自動生成されたメソッド・スタブ
+
+			Hero h=new Hero();
+			
+		h.name="ひろし";
+		List <Hero>he=new ArrayList<Hero>();
+		he.add(h);
+		h.name="田中";
+		
+		
+		
+		
+		
+		
+		
+		
+		
+
+
+
+	}
+
+}

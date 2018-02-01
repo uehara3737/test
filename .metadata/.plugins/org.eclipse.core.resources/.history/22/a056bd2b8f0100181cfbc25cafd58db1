@@ -1,0 +1,30 @@
+package jp.test;
+
+public class Helo {
+
+
+
+	 private String name;
+	 int hp;
+
+	 public String  getName(){
+		 return this.name;
+	 }
+
+	 public void setName(String name){
+		 this.name=name;
+
+	 }
+
+	 public void sit(int x){
+		 this.hp+=x;
+		 System.out.println(this.name+"は"+x+"ポイント回復した");
+}
+
+	 public void attack(){
+		 this.hp-=20;
+	 }
+
+
+
+}

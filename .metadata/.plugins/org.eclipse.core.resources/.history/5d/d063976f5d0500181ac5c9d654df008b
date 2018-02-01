@@ -1,0 +1,34 @@
+package jp.uehara;
+import java.util.Set;
+import java.util.TreeSet;
+import java.util.*;
+
+
+
+
+public class uehara {
+
+class Hero{
+	public String name;
+
+}
+
+
+	public static void main(String[] args) {
+
+// TODO 自動生成されたメソッド・スタブ
+
+
+
+Map <String,Integer>name=new HashMap<String,Integer>();
+name.put("ffff", 1);
+name.put("aaa",2);
+name.put("aad",2);
+
+int a=name.get("aaa");
+System.out.println(a);
+
+
+	}
+
+}

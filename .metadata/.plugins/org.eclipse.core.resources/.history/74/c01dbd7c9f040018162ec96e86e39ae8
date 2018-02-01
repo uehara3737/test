@@ -1,0 +1,59 @@
+package jp.test;
+
+public class Helo extends Character {
+
+
+
+	  String name;
+	 int hp;
+	 Sword ken;
+	 static int money=1000;
+
+
+//コンストラクタ1
+
+Helo(String name){
+
+	this.name=name;
+}
+//コンストラクタ２
+	Helo(){
+	this("佐藤");
+}
+  public static void start(){
+	  System.out.println("冒険の始まりです。");
+	  System.out.println("勇者の所持金は"+Helo.money);
+
+
+
+  }
+
+	 public void sit(int x){
+		 this.hp+=x;
+		 System.out.println(this.name+"は"+x+"ポイント回復した");
+}
+
+	 public void slip(){
+		 this.hp-=20;
+	 }
+
+
+	   public void attack(Kinoko k){
+		   k.hp-=15;
+		   System.out.println(this.name+"が"+this.ken.name+"でキノコに攻撃した");
+		   System.out.println("キノコ"+k.gobi+"のＨＰが１５へった");
+		   System.out.println("きのこ"+k.gobi+"の今のＨＰは"+k.hp+"です");
+		   if (k.hp<=0){
+			   System.out.println("キノコのHPが０になったきのこを倒した");
+		   }
+	   }
+
+public static void chokin(){
+	Helo.money+=200;
+	System.out.println("所持金は"+Helo.money+"です"
+			);
+
+
+}
+
+}

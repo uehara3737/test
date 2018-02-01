@@ -1,0 +1,24 @@
+package jp.uehara;
+
+public class Uehara {
+
+
+
+
+int hp=50;
+int mp=10;
+String name;
+
+final int MAX_hp=50;
+final int MAX_mp=10;
+
+
+public  void self(){
+	this.mp-=5;
+	this.hp=this.MAX_hp;
+	System.out.println(this.name+"HPが回復した");
+}
+
+
+
+}

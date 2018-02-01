@@ -1,0 +1,26 @@
+package jp.uehara;
+import java.util.HashMap;
+import java.util.Map;
+
+public class uehara {
+
+	public static void main(String[] args) {
+
+// TODO 自動生成されたメソッド・スタブ
+
+
+		Map <Integer,String>name=new HashMap<Integer,String>();
+		name.put(1000,"埼玉");
+		name.put(51,"東京");
+
+		String a=name.get(1000);
+			System.out.println(a);
+			for(int key:name.keySet()){
+				int x=name.get(key);
+				System.out.println(x);
+			}
+
+
+	}
+
+}

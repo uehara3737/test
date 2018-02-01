@@ -1,0 +1,11 @@
+package jp.test;
+
+public abstract class Character {
+
+
+//抽象メソッド
+	 public abstract void attack(Kinoko k);
+
+
+
+}

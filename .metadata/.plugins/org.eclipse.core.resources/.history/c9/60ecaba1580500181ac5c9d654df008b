@@ -1,0 +1,27 @@
+package jp.uehara;
+
+public class uehara {
+
+class Hero{
+	public String name;
+
+}
+
+
+	public static void main(String[] args) {
+
+// TODO 自動生成されたメソッド・スタブ
+
+
+
+
+
+
+
+
+
+
+
+	}
+
+}

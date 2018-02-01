@@ -1,0 +1,48 @@
+package jp.test;
+
+public class Helo {
+
+
+
+	 String name;
+	 int hp;
+	 Sword ken;
+
+//コンストラクタ
+	 Helo(String name){
+		 this.hp=100;
+		 this.name=name;
+
+
+	 }
+
+
+
+	 public String  getName(){
+		 return this.name;
+	 }
+
+	 public void setName(String name){
+		 this.name=name;
+
+	 }
+
+	 public void sit(int x){
+		 this.hp+=x;
+		 System.out.println(this.name+"は"+x+"ポイント回復した");
+}
+
+	 public void slip(){
+		 this.hp-=20;
+	 }
+
+
+	   public void attack(Kinoko k){
+		   k.hp-=15;
+		   System.out.println(this.name+"が"+this.ken.name+"でキノコに攻撃した");
+		   System.out.println("キノコ"+k.gobi+"のＨＰが１５へった");
+		   System.out.println("きのこ"+k.gobi+"の今のＨＰは"+k.hp+"です");
+	   }
+
+
+}

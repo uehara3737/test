@@ -1,0 +1,30 @@
+package jp.uehara;
+import jp.test.CalkLogic;
+
+public class CalkMain {
+
+	public static void main(String[] args) {
+		// TODO 自動生成されたメソッド・スタブ
+
+
+
+
+		int a=10;
+		int b=250;
+
+
+		int total=jp.test.CalkLogic.tasu(a,b);
+		int delta=CalkLogic.hiku(a,b);
+
+System.out.println(total);
+System.out.println(delta);
+
+
+
+
+
+
+
+	}
+
+}

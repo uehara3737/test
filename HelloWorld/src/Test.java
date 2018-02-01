@@ -1,0 +1,93 @@
+
+public class Test {
+
+//天の声！勇者に指示を出すクラス！
+
+	public static void main(String[] args){
+
+
+//剣１
+		Sword s=new Sword();
+		s.name="炎の剣";
+		s.hp=100;
+
+//剣２
+		Sword w=new Sword();
+		w.name="水の剣";
+		w.hp=80;
+
+
+//勇者みなと
+				person h=new person();
+				h.setName("");
+
+			    h.ken=s;
+
+				System.out.println("勇者"+h.name+"が生まれた！");
+
+
+//勇者ゆうた
+				person h1=new person();
+				h1.name="ゆうた";
+				h1.ken=w;
+				System.out.println(h1.name+"が"+h1.ken.name+"と"+s.name+"をゲットした");
+
+
+//魔法使い
+				Wizard majo=new Wizard();
+				majo.name="魔法使い";
+				majo.hp=50;
+				majo.heal(h1);
+
+
+				System.out.println(majo.name+"は"+h1.name+"を回復させた");
+
+//王様
+				King o=new King();
+                o.talk(h1);
+
+
+//スーパーヒーロー（勇者の継承）
+                SuperHero sh=new SuperHero();
+                sh.name="スーパーさなえ";
+                System.out.println("スーパーヒーロー登場");
+                sh.run();
+
+
+
+//めぐみん
+
+
+//お化けキノコＡ
+
+				kinoko k=new kinoko();
+
+				k.hp=100;
+				k.suffix='A';
+
+
+				k.run();
+//お化けキノコＩ
+
+				kinoko i=new kinoko();
+
+				i.hp=100;
+				i.suffix='B';
+
+				k.run();
+				i.run();
+
+
+
+
+
+
+
+
+
+
+	}
+
+
+
+}

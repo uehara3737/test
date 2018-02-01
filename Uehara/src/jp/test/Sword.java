@@ -1,0 +1,10 @@
+package jp.test;
+
+public class Sword {
+
+	String name;
+	int damage;
+
+
+
+}

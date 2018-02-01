@@ -1,0 +1,21 @@
+package jp.uehara;
+
+public class CalkLogic {
+
+	int a;
+	int b;
+
+	public int tasu(int a,int b){
+		int ans=a+b;
+		return ans;
+	}
+
+	public int hiku(int a,int b){
+		return a-b;
+
+	}
+
+
+
+
+}

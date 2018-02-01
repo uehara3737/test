@@ -1,0 +1,22 @@
+package jp.test;
+
+public class Kinoko {
+
+	int hp;
+	int level=10;
+	char gobi;
+
+if (this.hp<=0){
+	System.out.println(this.name+"を倒した");
+}
+
+
+
+
+
+
+
+
+
+
+}
