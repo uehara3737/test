@@ -1,0 +1,11 @@
+package jp.test;
+
+public interface  Monster {
+
+	
+	public abstract void attack();
+	
+	7
+	
+	
+}

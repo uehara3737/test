@@ -1,0 +1,23 @@
+package jp.uehara;
+import java.util.*;
+
+public class Hero {
+
+	private String name;
+	int hp;
+
+
+	public Hero(String name){
+		this.name=name;
+
+	}
+
+	public String getName(){
+		return this.name;
+	}
+public String toString(){
+	return "勇者(名前="+this.name+"/HP"+this.hp;
+
+}
+
+}

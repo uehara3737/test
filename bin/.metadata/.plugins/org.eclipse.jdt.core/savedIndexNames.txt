@@ -1,0 +1,25 @@
+INDEX VERSION 1.130+C:\Users\yoriko\Desktop\eclipsss\pleiades\workspace\test\.metadata\.plugins\org.eclipse.jdt.core
+962719779.index
+3695143081.index
+1662112055.index
+1495753997.index
+3124228672.index
+3661132330.index
+2380175872.index
+969968605.index
+3014000648.index
+1849997118.index
+2573306658.index
+3866458638.index
+473185971.index
+2317219881.index
+2853948622.index
+4206609273.index
+3677011756.index
+348126689.index
+3836938629.index
+2536148267.index
+4133474636.index
+1441500752.index
+2145682996.index
+3497190822.index

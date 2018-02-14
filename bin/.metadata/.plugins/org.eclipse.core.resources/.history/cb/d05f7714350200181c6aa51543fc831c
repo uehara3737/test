@@ -1,0 +1,20 @@
+package jp.uehara;
+import jp.test.Wizard;
+
+
+public class Capsule {
+
+	public static void main(String[] args) {
+		// TODO 自動生成されたメソッド・スタブ
+
+   Wizard w=new Wizard();
+ w.setName("山田");
+
+ System.out.println(w.getName());
+
+
+
+	}
+
+
+}

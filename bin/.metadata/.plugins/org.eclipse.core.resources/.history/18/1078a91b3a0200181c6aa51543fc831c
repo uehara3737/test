@@ -1,0 +1,15 @@
+package jp.test;
+
+//抽象クラス
+
+public abstract class Character {
+
+
+//抽象メソッド
+	 public abstract void attack(Kinoko k);
+
+     public abstract void dance(Helo h);
+
+     public abstract void song(Wizard w);
+
+}

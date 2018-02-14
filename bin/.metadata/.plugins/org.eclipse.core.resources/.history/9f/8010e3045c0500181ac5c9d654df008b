@@ -1,0 +1,51 @@
+package jp.uehara;
+import java.util.ArrayList;
+import java.util.Iterator;
+
+
+
+public class uehara {
+
+class Hero{
+	public String name;
+
+}
+
+
+	public static void main(String[] args) {
+
+// TODO 自動生成されたメソッド・スタブ
+
+ArrayList <String>name=new ArrayList <String>();
+name.add("aaa");
+name.add("aaaa");
+name.add("rrrrr");
+name.add("gagaga");
+name.add("hahahah");
+
+
+
+System.out.println(name.size());
+
+name.remove(0);
+System.out.println(name.get(0));
+
+name.remove(0);
+
+
+
+
+
+Iterator <String> it=name.iterator();
+	while(it.hasNext()){
+		String e=it.next();
+		System.out.println(e);
+	}
+
+
+
+
+
+	}
+
+}

@@ -1,0 +1,19 @@
+package jp.test;
+
+public class SuperHero extends Helo {
+
+
+
+
+
+
+	public void attack(){
+		this.hp-=50;
+
+	}
+
+
+
+
+
+}

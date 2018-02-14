@@ -1,0 +1,27 @@
+package jp.uehara;
+import java.util.*;
+
+public class Hero {
+
+	private String name;
+	public Hero(String name){
+		this.name=name;
+
+	}
+
+	public String getName(){
+		return this.name;
+	}
+
+	Hero h=new Hero("斎藤");
+	Hero h2=new Hero("鈴木");
+
+	List <Hero> hero=new ArrayList<Hero>();
+	hero.add(h);
+	hero.add(h2);
+
+	for(Hero x=hero){
+		System.out.println(h.getName());
+	}
+
+}

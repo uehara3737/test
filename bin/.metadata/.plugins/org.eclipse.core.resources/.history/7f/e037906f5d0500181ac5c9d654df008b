@@ -1,0 +1,40 @@
+package jp.uehara;
+import java.util.Set;
+import java.util.TreeSet;
+
+
+
+
+public class uehara {
+
+class Hero{
+	public String name;
+
+}
+
+
+	public static void main(String[] args) {
+
+// TODO 自動生成されたメソッド・スタブ
+
+
+
+
+Set <String>name=new TreeSet <String>();
+name.add("ghi");
+name.add("def");
+name.add("abc");
+name.add("jkl");
+name.add("nmo");
+
+System.out.println(name.size());
+
+
+for(String s:name){
+		System.out.println(s);
+}
+
+
+	}
+
+}

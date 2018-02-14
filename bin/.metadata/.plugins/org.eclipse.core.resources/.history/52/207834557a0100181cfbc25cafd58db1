@@ -1,0 +1,18 @@
+package jp.test;
+
+public class Helo {
+
+
+
+	 private String name;
+	 private int hp;
+
+
+	 public void sleep(int x){
+		 this.hp+=x;
+		 System.out.println(this.name+"は"+x+"ポイント回復した");
+
+	 }
+
+
+}

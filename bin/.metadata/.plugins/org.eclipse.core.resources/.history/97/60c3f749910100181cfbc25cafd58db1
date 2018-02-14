@@ -1,0 +1,11 @@
+package jp.test;
+
+public class Kinoko {
+
+	int hp;
+	int level=10;
+	char gobi;
+
+
+
+}

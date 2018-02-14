@@ -1,0 +1,25 @@
+package jp.uehara;
+import java.util.HashSet;
+import java.util.Set;
+
+public class uehara {
+
+	public static void main(String[] args) {
+
+// TODO 自動生成されたメソッド・スタブ
+
+
+		Set <String> name=new HashSet <String> ();
+		name.add("赤");
+		name.add("黄");
+		name.add("緑");
+		name.add("黄色");
+
+		System.out.println("色は"+name.size()+"種類");
+
+
+
+
+	}
+
+}
