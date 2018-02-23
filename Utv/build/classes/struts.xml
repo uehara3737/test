@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+<constant name="struts.devMode" value="true"/>
+<package name="com.uehara.Utv.action" extends="struts-default">
+
+<!-- ★HomeAction-->
+<!-- ログイン画面にただ移動するだけ -->
+<action name="HomeAction" class="com.uehara.Utv.action.HomeAction" method="execute">
+<result name="success">login.jsp</result>
+</action>
+
+<!-- ★LoginAction-->
+<!-- ログインボタンを押したとき -->
+<action name="LoginAction" class="com.uehara.Utv.action.LoginAction" method="execute">
+<result name="success">utvhome.jsp</result>
+<result name="error">utverror.jsp</result>
+</action>
+
+<!-- ★CreateAction -->
+<!-- 登録画面にただ移動するだけ -->
+<action name="CreateAction" class="com.uehara.Utv.action.CreateAction" method="execute">
+<result name="success">create.jsp</result>
+<result name="back">login.jsp</result>
+</action>
+
+<!--   UserCreateConfirmAction-->
+<!--  本当にいいですか？の画面に移動-->
+<!-- 空だったらエラーになる -->
+<action name="UserCreateConfirmAction" class="com.uehara.Utv.action.UserCreateConfirmAction" method="execute">
+<result name="success">userCreateConfirm.jsp</result>
+<result name="error">Create.jsp</result>
+</action>
+
+
+<!-- ★UserCreateCompleteAction -->
+<!-- はい、これでいいです！登録ボタン送信後 -->
+<action name="UserCreateCompleteAction" class="com.uehara.Utv.action.UserCreateCompleteAction" method="execute">
+<result name="success">userCreate.jsp</result>
+<result name="error">userCreateError.jsp</result>
+</action>
+
+<!-- ★MyHomeAction★ -->
+<!-- マイページに移動するだけ -->
+<action name="MyHomeAction" class="com.uehara.Utv.action.MyHomeAction" method="execute">
+<result name="success">myHome.jsp</result>
+</action>
+
+<!-- ★AccountAction★ -->
+<!-- アカウントページに移動するだけ -->
+<action name="AccountAction" class="com.uehara.Utv.action.AccountAction" method="execute">
+<result name="success">account.jsp</result>
+</action>
+
+<!-- ★ToiawaseAction★ -->
+<!-- 問い合わせページに移動するだけ-->
+<action name="ToiawaseAction" class="com.uehara.Utv.action.ToiawaseAction" method="execute">
+<result name="success">toiawase.jsp</result>
+</action>
+<!-- ★ToiawaseCompleteAction★ -->
+<action name="ToiawaseCompleteAction" class="com.uehara.Utv.action.ToiawaseCompleteAction" method="execute">
+<result name="success">toiawaseComplete.jsp</result>
+</action>
+</package>
+</struts>
