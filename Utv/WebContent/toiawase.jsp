@@ -4,22 +4,39 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <link rel="stylesheet" type="text/css" href="style.css">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
 <title>個別リクエスト</title>
 </head>
+<header>
+<div class="logo">
+<span class="u">U</span><span class="tv">tv</span></div>
+</header>
+
 <body>
 <h1>個別リクエスト</h1>
-<br>
+<hr><br>
+
+
+<div class="toiawase">
 
 <s:form action="ToiawaseCompleteAction">
 <h3><s:property value="#session.loginUser.loginIdjsp"/>様がみたいアニメは何ですか？？</h3>
 <br><br>
 お気軽にどんどんリクエストをお願いします。<br>
-<span>
+<span class="toiawasespan">
 *いただいたリスエストは取扱い作品の参考にさせていただきます。</span><br><br>
-<textarea rows="4" cols="40" name="toiawasejsp"  /></textarea>
-<s:submit value="送信する"  class="submit"/>
+<textarea rows="4" cols="40" name="toiawasejsp"  /></textarea><br><br>
+<s:submit value="送信する"  class="toiawasesubmit"/>
+
 </s:form>
+
+</div>
+
+
 </body>
+<footer>
+(c) U E H A R A  T V
+</footer>
 </html>

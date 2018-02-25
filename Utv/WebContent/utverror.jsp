@@ -10,4 +10,7 @@
 ログインできません！
 アカウント作成はこちら
 </body>
+<footer>
+(c) U E H A R A  T V
+</footer>
 </html>

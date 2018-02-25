@@ -25,6 +25,8 @@ private String result;
 
 private UserCreateCompleteDAO completeDAO=new UserCreateCompleteDAO();
 
+
+
 public String execute() throws SQLException{
 	completeDAO.createUser(
 			session.get("loginIdKey").toString(),
@@ -40,6 +42,26 @@ public String execute() throws SQLException{
 result=SUCCESS;
 return result;
 }
+
+
+//PeriodDiffDAO perioodDAO=new PeriodDiffDAO();
+//perioodDAO.createDate(Strin)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 //Id
 public String getLoginIdjsp() {

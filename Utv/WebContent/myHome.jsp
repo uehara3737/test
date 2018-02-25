@@ -4,28 +4,16 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
+<link rel="stylesheet" type="text/css" href="style.css">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>マイページ</title>
-<style>
-h1{
-margin-top:30px;
-margin-bottom:20px;
-border-left:8px #FE642E solid;
-padding-top:5px;
-padding-left:15px;
-width:500px;
-font-size:25px;}
 
-.submit{
-border:1px solid lightgray;
-padding:4px 10px;
-color:white;
-background-color:#bfbfbf;
-border-radius:5px;
-border-bottom:solid 2px gray;}
-
-</style>
 </head>
+
+<header>
+<div class="logo">
+<span class="u">U</span><span class="tv">tv</span></div>
+</header>
 <body>
 <h1>マイページ</h1>
 <s:form action="AccountAction">
@@ -42,4 +30,7 @@ border-bottom:solid 2px gray;}
 <s:submit value="リクエスト"   class="submit"/><br>
 </s:form>
 </body>
+<footer>
+(c) U E H A R A  T V
+</footer>
 </html>

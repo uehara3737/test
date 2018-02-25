@@ -8,11 +8,15 @@
 <link rel="stylesheet" type="text/css" href="style.css">
 <title>アカウント情報</title>
 </head>
+<header>
+<div class="logo">
+<span class="u">U</span><span class="tv">tv</span></div>
+</header>
 <body>
 <h1>お客様 アカウント情報</h1>
 <hr><br><br>
-<form>
-<table >
+<div class="taba">
+<table>
 <tr><td>■  契  約  日　</td><td>|   <s:property value="#session.loginUser.dateUtil"/></td></tr>
 <tr><td>■  氏　　名　</td><td>|   <s:property value="#session.loginUser.loginIdjsp"/> <s:property value="#session.loginUser.loginId1jsp"/></td></tr>
 <tr><td>■  アカウント名　</td><td>|   <s:property value="#session.loginUser.loginNamejsp"/></td></tr>
@@ -21,7 +25,8 @@
 <tr><td>■  電話番号</td><td>|   <s:property value="#session.loginUser.loginTeljsp"/></td></tr>
 
 </table>
-</form><br><br>
+</div>
+<br><br>
 <s:form action="MyHomeAction">
 <s:submit value="マイホームに戻る"   class="submit"/><br></s:form><br><br>
 <s:form action="UtvHomeAction">
@@ -30,4 +35,7 @@
 <hr>
 
 </body>
+<footer>
+(c) U E H A R A  T V
+</footer>
 </html>

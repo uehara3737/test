@@ -4,15 +4,20 @@
 <!DOCTYPE html>
 <html>
 <head>
+<link rel="stylesheet" type="text/css" href="style.css">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>登録確認画面</title>
 </head>
+<header>
+<div class="logo">
+<span class="u">U</span><span class="tv">tv</span></div>
+</header>
 <body>
 	<p>UserCreateConfirm.jsp</p>
 	<div>
 	<hr>
-		<h3>登録する内容は以下でよろしいですか？</h3>
-
+		<h4>登録する内容は以下でよろしいですか？</h4>
+<div class="taba">
 		<table>
 			<s:form action="UserCreateCompleteAction">
 				<tr>
@@ -21,41 +26,45 @@
 					<s:property value="loginId1jsp" escape="false" /></td>
 				</tr>
 				<tr>
-					<td><label>アカウント名</label></td>
+					<td>アカウント名</td>
 					<td>
 						<!-- 下の文は特になくてもよい。↓他の人にもコメントとしてわかりやすいように --> <s:property
 							value="loginNamejsp" escape="false" />
 					</td>
 				</tr>
 				<tr>
-					<td><label>ログインパスワード</label></td>
+					<td>ログインパスワード</td>
 					<td><s:property value="loginPasswordjsp" escape="false" /></td>
 				</tr>
 				<tr>
-					<td><label>メールアドレス</label></td>
+					<td>メールアドレス</td>
 					<td><s:property value="loginMailjsp" escape="false" /></td>
 				</tr>
 				<tr>
-					<td><label>郵便番号</label></td>
+					<td>郵便番号</td>
 					<td><s:property value="zip21" escape="false" />-<s:property value="zip22" escape="false" /></td>
 				</tr>
 				<tr>
-					<td><label>住 　　所</label></td>
+					<td>住 　　所</td>
 					<td><s:property value="addr21" escape="false" /></td>
 				</tr>
 				<tr>
-					<td><label>電話番号</label></td>
+					<td>電話番号</td>
 					<td><s:property value="loginTeljsp" escape="false" /></td>
 				</tr>
 
-				<tr>
-					<td><s:submit value="完了" class="submit" /> </td>
+				<tr><td></td><td></td>
+					<td><s:submit value="登録" class="submit" /> </td>
 				</tr>
 			</s:form>
 		</table>
-
+		</div>
+<br><br>
 		入力画面に戻る場合は<span><a href='<s:url action="CreateAction"/>'>こちら</a></span>
 
 	</div>
 </body>
+<footer>
+(c) U E H A R A  T V
+</footer>
 </html>

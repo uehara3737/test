@@ -4,28 +4,26 @@
 <!DOCTYPE html >
 <html>
 <head>
+<!-- ■HEAD■ -->
 <meta charset="UTF-8">
 <link rel="stylesheet" type="text/css" href="style.css">
 <title>ユーザー登録画面</title>
-<!-- ■HEAD■ -->
 <meta http-equiv="Content-Script-Type" content="text/javascript">
 <script src="https://ajaxzip3.github.io/ajaxzip3.js" charset="UTF-8"></script>
-
-<!-- ■CSS■ -->
-<!--<style type="text/css">
-</style>-->
-
 </head>
+<header>
+<div class="logo">
+<span class="u">U</span><span class="tv">tv</span></div>
+</header>
 <!-- ■BODY■ -->
 <body>
-		<h1>申し込みフォーム</h1>
-		<hr>
+	<h1>申し込みフォーム</h1>
+	<hr>
+	<div class="tabc">
 	<table>
-	<tbody>
-		<s:form method="post" action="UserCreateConfirmAction" class="a">
-			<h3>create.jsp</h3>
+		<s:form method="post" action="UserCreateConfirmAction">
+		<tr><td></td><td><span>*</span><span class="memo2">の項目は必須項目です。</span></td></tr>
 			<!-- ★氏名★-->
-
 			<tr>
 				<td>1. 氏 名 <span>*</span>
 				</td>
@@ -33,7 +31,7 @@
 					type="text" name="loginId1jsp" size="10" required /></td>
 			</tr>
 
-				<!-- ★アカウント名★-->
+			<!-- ★アカウント名★-->
 			<tr>
 				<td>2. アカウント名<span>*</span><span class="memo">（半角英数
 						10文字以内）</span>
@@ -48,36 +46,9 @@
 				<td>3. ログインパスワード<span>*</span> <span class="memo">（半角英数
 						10文字以内）</span></td>
 				<td><input type="text" name="loginPasswordjsp" value=""
-					size="40" pattern="^[0-9A-Za-z]+$" maxlength="10" required /> <script>
-						var form = document.forms[0];
-						form.onsubmit = function() {
-							// エラーメッセージをクリアする
-							form.password.setCustomValidity("");
-							// パスワードの一致確認
-							if (form.password.value != form.passwordConfirm.value) {
-								// 一致していなかったら、エラーメッセージを表示する
-								form.password
-										.setCustomValidity("パスワードと確認用パスワードが一致しません");
-							}
-						};
-						// 入力値チェックエラーが発生したときの処理
-						form
-								.addEventListener(
-										"invalid",
-										function() {
-											document
-													.getElementById("errorMessage").innerHTML = "入力値にエラーがあります";
-										}, false);
-					</script></td>
-			<tr />
+					size="40" pattern="^[0-9A-Za-z]+$" maxlength="10" required /></td>
+			</tr>
 
-
-
-			<!--  <tr><td>
-			<label for="password">パスワード:</label>
-  <input type="password" name="password" id="password" required><br></td><td>
-  <label for="passwordConfirm">パスワード（確認）:</label>
-  <input type="password" name="passwordConfirm" id="passwordConfirm" required><br></td>
 			<!-- ★メールアドレス★-->
 			<tr>
 				<td><label for="email_2">4. メールアドレス<span>*</span></label></td>
@@ -85,7 +56,7 @@
 					required /></td>
 			</tr>
 			<tr>
-				<td><label for="emailConfirm_2"> メールアドレス<span>*</span><span
+				<td><label for="emailConfirm_2">  メールアドレス<span>*</span><span
 						class="memo">（確認用）</span></label></td>
 				<td><input type="email" id="emailConfirm_2" required
 					oninput="CheckEmail_2(this)" /></td>
@@ -130,13 +101,12 @@
 							for (var i = 18; i <= 70; i++) {
 								document.write("<option>" + i + "歳</option>")
 							}
-
 						</script></td>
 			</tr>
 
 			<!-- ★アンケートフォーム★-->
 			<tr>
-				<td>10. Utvを知ったきっかけは？<span class="memo">（複数選択可）</span></td>
+				<td>9. Utvを知ったきっかけは？<span class="memo">（複数選択可）</span></td>
 
 				<td><label><input type="checkbox" name="check"
 						value="yahoo">Yahoo!</label> <label><input type="checkbox"
@@ -144,34 +114,31 @@
 						type="checkbox" name="check" value="book">雑誌</label> <label><input
 						type="checkbox" name="check" value="tv">テレビ</label>
 				<td>
-				<tr>
-				<td>
-				</td>
-				</tr>
-
-			<br><br>
 			<tr>
-			<td>
-			<input type="reset" name="reset" value="入力内容のクリア" class="submit">
-			</td></tr>
-			<s:submit value="次へ"  class="submit"/>
+				<td></td>
+			</tr>
+
+			<br>
+			<br>
+			<tr>
+				<td><input type="reset" name="reset" value="入力内容のクリア"
+					class="submit"></td>
+			</tr>
+			<s:submit value="次へ" class="submit" />
 		</s:form>
-		</tbody>
+
 	</table>
+	</div>
 
 	<br>
 	<br>
-	<span>*</span>の項目は必須項目です。
+
 	<br> ログインページに戻る場合は
 	<span><a href='<s:url action="HomeAction"/>'>こちら</a></span>
 	<hr>
-	<!--  <?php
-echo '<select name="age">';
-echo '<option value="未選択">年齢</opton>';
-for($i=18; $i<=65; $i++){
-echo "<option value='{$i}'>{$i}</option>";
-}
-echo '</select>';
-?>-->
+
 </body>
+<footer>
+(c) U E H A R A  T V
+</footer>
 </html>

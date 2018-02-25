@@ -19,12 +19,14 @@ user_tel varchar(12),
 user_year varchar(5),
 user_month varchar(5),
 user_day varchar(5),
-insert_date date);
+insert_date date,
+insert_time datetime);
+
 
 create table user_toiawase(
 user_text varchar(255));
 
 
-insert into user_info (user_id,user_name,user_password)value("上原","sanae","1234");
+insert into user_info (user_id,user_name,user_password)value("UEHARA","sanae","1234");
 insert into user_info(user_id,user_name,user_password)value("須藤","yuka","1234");
 insert into user_info(user_id,user_name,user_password)value("田中","koji","1234");

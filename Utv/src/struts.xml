@@ -64,5 +64,6 @@
 <action name="ToiawaseCompleteAction" class="com.uehara.Utv.action.ToiawaseCompleteAction" method="execute">
 <result name="success">toiawaseComplete.jsp</result>
 </action>
+
 </package>
 </struts>

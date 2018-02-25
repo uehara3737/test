@@ -7,14 +7,15 @@
 <head>
 <meta charset="UTF-8">
 <link rel="stylesheet" type="text/css" href="style.css">
+<s:head/>
 <title>ようこそUtvへ！</title>
 </head>
+<header>
+<div class="logo">
+<span class="u">U</span><span class="tv">tv</span></div>
+</header>
 <body>
-	<h1>ログイン完了しました。</h1>
-（utvhome.jsp)
-	<br>
-
-<br>
+（utvhome.jsp
 <s:form action="MyHomeAction">
 <br><br><br>
 <span>
@@ -23,13 +24,15 @@
 	さんようこそ！
 	<br>お楽しみください。<br>
 	キャンペーン情報はこちら
+
 <s:submit value="マイホーム"   class="submit"/><br>
 </s:form>
-<s:form action="UtvHomeAction">
-<s:submit value="Utvホーム"   class="submit"/><br>
-</s:form>
+
 <!--<s:submit value="お気に入り"  action="OkiniiriAction" class="submit"/><br>
 <s:submit value="ログアウト"  action="LogoutAction" class="submit"/><br>
 -->
 </body>
+<footer>
+(c) U E H A R A  T V
+</footer>
 </html>

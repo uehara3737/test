@@ -4,8 +4,9 @@
 <!DOCTYPE html >
 <html>
 <head>
-<meta charset="UTF-8">
 <link rel="stylesheet" type="text/css" href="style.css">
+<meta charset="UTF-8">
+
 
 <title>Home</title>
 
@@ -13,11 +14,12 @@
 </head>
 <body>
 <header>
-
+<div class="logo">
+<span class="u">U</span><span class="tv">tv</span></div>
 </header>
 
 <h1>Ｕｔｖへようこそ！</h1>
-<hr>
+<hr class="hr1">
 <s:form action="HomeAction">
 <s:submit value="ログイン" class="submit"/>
 </s:form>
@@ -30,4 +32,7 @@
 <hr>
 
 </body>
+<footer>
+(c) U E H A R A  T V
+</footer>
 </html>

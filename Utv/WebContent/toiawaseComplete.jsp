@@ -10,6 +10,10 @@
 <title>問い合わせ完了ページ</title>
 
 </head>
+<header>
+<div class="logo">
+<span class="u">U</span><span class="tv">tv</span></div>
+</header>
 <body>
 <br>
 <br>
@@ -21,4 +25,7 @@
 <s:submit value="マイホーム"   class="submit"/><br>
 </s:form>
 </body>
+<footer>
+(c) U E H A R A  T V
+</footer>
 </html>

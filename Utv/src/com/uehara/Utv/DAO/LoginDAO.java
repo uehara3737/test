@@ -7,6 +7,8 @@ import java.util.List;
 
 import com.uehara.Utv.DTO.LoginDTO;
 import com.uehara.Utv.util.DBConnector;
+
+
 public class LoginDAO {
 	public String loginNamejsp;
 	public String loginPasswordjsp;

@@ -5,69 +5,52 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="style.css">
 <title>ログイン画面</title>
-<style type="text/css">
-h2{
-margin-top:30px;
-margin-bottom:20px;
-border-left:8px #FE642E solid;
-padding-top:5px;
-padding-left:15px;
-width:500px;
-font-size:25px;}
-h3{text-align:right;
-	margin-right:20px;
-	 margin-top:20px;
-	}
-th{border-left:8px solid #FE642E;
-}
 
-table{
-margin:0 auto;}
-
-.touroku{
-text-align:center;}
-
-.submit{
-border:1px solid lightgray;
-padding:4px 10px;
-color:white;
-background-color:#bfbfbf;
-border-radius:5px;
-border-bottom:solid 2px gray;}
-
-</style>
 </head>
+<header>
+<div class="logo">
+<span class="u">U</span><span class="tv">tv</span></div>
+</header>
 <body>
-<h2>ログイン(login.jsp)</h2>
+<h1>ログイン(login.jsp)</h1>
+<h3 class="loginh3">Utvアカウント</h3>
 <hr>
-<h3>Utvアカウント</h3>
+<br><br>
+<div class="tab">
+<table class="ta">
 
-
-<table>
 <s:form action="LoginAction">
 <tr>
 <th>アカウント名</th>
+<td><s:textfield name="loginNamejsp" class="textfield"/></td>
 </tr>
-<tr>
-<td>
-<s:textfield name="loginNamejsp"/>
-</td></tr>
+
 
 <tr>
-<th>パスワード</th></tr><tr>
-<td><s:password name="loginPasswordjsp"/></td>
-<td>
+<th>パスワード</th>
+<td><s:password name="loginPasswordjsp" class="textfield" /></td>
+</tr>
+<br>
+<tr><td></td><td>
 <s:submit value="ログイン" class="submit"/>
 </td>
 </tr>
 </s:form>
 </table>
+</div>
 <br>
 <br>
 <div class="touroku">
-<span>Utv 新規登録は</span><a href='<s:url action="CreateAction"/>'>こちら</a></div>
+<span>Utv 新規登録は</span><a href='<s:url action="CreateAction"/>'>こちら</a>
 
-
+<s:form action="OtamesiAction">
+<s:submit value="30日間 無料お試し" class="otamesisubmit"/>
+</s:form>
+</div>
 </body>
+<footer>
+(c) U E H A R A  T V
+</footer>
 </html>
