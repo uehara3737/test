@@ -1,9 +1,0 @@
-package jp.uehara;
-
-public class Hero {
-
-
-
-}
-
-

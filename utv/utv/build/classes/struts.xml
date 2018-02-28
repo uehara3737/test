@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<!-- Strutsの詳細設定 -->
+<struts>
+	<constant name="struts.devMode" value="true" />
+	<!-- 対象のpackageを設定 -->
+	<package name="com.internousdev.ecsite.action" extends="struts-default">
+
+		<!-- GoHomeAction -->
+		<action name="GoHomeAction" class="com.internousdev.ecsite.action.GoHomeAction" method="execute">
+			<result name="success">home.jsp</result>
+		</action>
+
+		<!-- HomeAction -->
+		<action name="HomeAction" class="com.internousdev.ecsite.action.HomeAction" method="execute">
+			<result name="login">login.jsp</result>
+			<result name="master">master.jsp</result>
+			<result name="success">buyItem.jsp</result>
+		</action>
+
+		<!-- LoginAction -->
+		<action name="LoginAction" class="com.internousdev.ecsite.action.LoginAction" method="execute">
+			<result name="master">master.jsp</result>
+			<result name="success">buyItem.jsp</result>
+			<result name="error">login.jsp</result>
+		</action>
+
+		<!-- UserCreateAction -->
+		<action name="UserCreateAction" class="com.internousdev.ecsite.action.UserCreateAction" method="execute">
+			<result name="success">userCreate.jsp</result>
+			<result name="back">login.jsp</result>
+		</action>
+
+		<!-- UserCreateConfirmAction -->
+		<action name="UserCreateConfirmAction" class="com.internousdev.ecsite.action.UserCreateConfirmAction" method="execute">
+			<result name="success">userCreateConfirm.jsp</result>
+			<result name="error">userCreate.jsp</result>
+		</action>
+
+		<!-- UserCreateCompleteAction -->
+		<action name="UserCreateCompleteAction" class="com.internousdev.ecsite.action.UserCreateCompleteAction" method="execute">
+			<result name="success">userCreateComplete.jsp</result>
+		</action>
+
+		<!-- BuyItemAction -->
+		<action name="BuyItemAction" class="com.internousdev.ecsite.action.BuyItemAction" method="execute">
+			<result name="success">buyItemConfirm.jsp</result>
+			<result name="error">buyItem.jsp</result>
+		</action>
+
+		<!-- BuyItemConfirmAction -->
+		<action name="BuyItemConfirmAction" class="com.internousdev.ecsite.action.BuyItemConfirmAction" method="execute">
+			<result name="success">buyItemComplete.jsp</result>
+			<result name="error">buyItemCompleteError.jsp</result>
+			<result name="back">buyItem.jsp</result>
+		</action>
+
+		<!-- BuyItemCompleteAction -->
+		<action name="BuyItemCompleteAction" class="com.internousdev.ecsite.action.BuyItemCompleteAction" method="execute">
+			<result name="success">home.jsp</result>
+		</action>
+
+		<!-- MyPageAction -->
+		<action name="MyPageAction" class="com.internousdev.ecsite.action.MyPageAction" method="execute">
+			<result name="success">myPage.jsp</result>
+			<result name="error">error.jsp</result>
+		</action>
+
+		<!-- LogoutAction -->
+		<action name="LogoutAction" class="com.internousdev.ecsite.action.LogoutAction" method="execute">
+			<result name="success">login.jsp</result>
+		</action>
+
+		<!-- MasterAction -->
+		<action name="MasterAction" class="com.internousdev.ecsite.action.MasterAction" method="execute">
+			<result name="success">masterConfirm.jsp</result>
+		</action>
+
+		<!-- MasterConfirmAction -->
+		<action name="MasterConfirmAction" class="com.internousdev.ecsite.action.MasterConfirmAction" method="execute">
+			<result name="success">masterComplete.jsp</result>
+		</action>
+
+		<!-- GoInsertAction -->
+		<action name="GoInsertAction" class="com.internousdev.ecsite.action.GoInsertAction" method="execute">
+			<result name="success">itemInsert.jsp</result>
+		</action>
+
+		<!-- ItemInsertAction -->
+		<action name="ItemInsertAction" class="com.internousdev.ecsite.action.ItemInsertAction" method="execute">
+			<result name="success">itemInsertComplete.jsp</result>
+			<result name="error">itemInsert.jsp</result>
+		</action>
+
+		<!-- GoItemUpdateAction -->
+		<action name="GoItemUpdateAction" class="com.internousdev.ecsite.action.GoItemUpdateAction" method="execute">
+			<result name="success">itemUpdate.jsp</result>
+		</action>
+
+		<!-- ItemUpdateAction -->
+		<action name="ItemUpdateAction" class="com.internousdev.ecsite.action.ItemUpdateAction" method="execute">
+			<result name="success">itemUpdateEnter.jsp</result>
+		</action>
+
+		<!-- ItemUpdateEnterAction -->
+		<action name="ItemUpdateEnterAction" class="com.internousdev.ecsite.action.ItemUpdateEnterAction" method="execute">
+			<result name="success">itemUpdateComplete.jsp</result>
+			<result name="error">itemUpdateEnter.jsp</result>
+		</action>
+
+		<!-- GoItemDeleteAction -->
+		<action name="GoItemDeleteAction" class="com.internousdev.ecsite.action.GoItemDeleteAction" method="execute">
+			<result name="success">itemDelete.jsp</result>
+		</action>
+
+		<!-- ItemDeleteAction -->
+		<action name="ItemDeleteAction" class="com.internousdev.ecsite.action.ItemDeleteAction" method="execute">
+			<result name="success">itemDeleteConfirm.jsp</result>
+		</action>
+
+		<!-- ItemDeleteCompleteAction -->
+		<action name="ItemDeleteCompleteAction" class="com.internousdev.ecsite.action.ItemDeleteCompleteAction" method="execute">
+			<result name="success">itemDeleteComplete.jsp</result>
+		</action>
+
+		<!-- ItemSearchAction -->
+		<action name="ItemSearchAction" class="com.internousdev.ecsite.action.ItemSearchAction" method="execute">
+			<result name="success">buyItem.jsp</result>
+			<result name="error">buyItem.jsp</result>
+		</action>
+
+		<!-- GoUserUpdateAction -->
+		<action name="GoUserUpdateAction" class="com.internousdev.ecsite.action.GoUserUpdateAction" method="execute">
+			<result name="success">userUpdate.jsp</result>
+		</action>
+
+		<!-- UserUpdateAction -->
+		<action name="UserUpdateAction" class="com.internousdev.ecsite.action.UserUpdateAction" method="execute">
+			<result name="success">userUpdateConfirm.jsp</result>
+			<result name="error">userUpdate.jsp</result>
+		</action>
+
+		<!-- UserUpdateCompleteAction -->
+		<action name="UserUpdateCompleteAction" class="com.internousdev.ecsite.action.UserUpdateCompleteAction" method="execute">
+			<result name="success">userUpdateComplete.jsp</result>
+			<result name="error">error.jsp</result>
+		</action>
+	</package>
+</struts>
